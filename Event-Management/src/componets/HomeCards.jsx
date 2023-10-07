@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import HomeCard from './HomeCard';
 import { AuthContext } from './AuthProvider';
+import { NavLink } from 'react-router-dom';
 
 export default function HomeCards() {
     const {data}= useContext(AuthContext)
@@ -19,12 +20,16 @@ export default function HomeCards() {
       }
         </div>
         <div className="my-3"> 
-        <button
+       <NavLink to="/Services">
+       <button
   class="middle none center mr-4 rounded-lg bg-red-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-red-500/20 transition-all hover:shadow-lg hover:shadow-red-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
   data-ripple-light="true"
+ 
 >
   Sell All
 </button>
+        
+        </NavLink> 
         </div>
        
     </div>

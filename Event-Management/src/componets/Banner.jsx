@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default function Banner() {
   return (
@@ -9,7 +10,7 @@ export default function Banner() {
     <div className="max-w-xl">
       <h1 className="mb-5 text-5xl font-bold">Best Event Management in Bangladesh</h1>
       <p className="mb-5">For best services for social events we are there for you</p>
-      <button className="btn glass bg-zinc-200">Learn More</button>
+      <NavLink to="/AboutUs"><button className="btn glass bg-zinc-200">Learn More</button></NavLink>
     </div>
   </div>
 </div>
