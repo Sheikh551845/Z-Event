@@ -26,7 +26,7 @@ export default function MeetTeam() {
             "image": "https://i.ibb.co/n37sBm4/Farhan.jpg"
           }
         ]
-        console.log(data)
+        
        
       
       

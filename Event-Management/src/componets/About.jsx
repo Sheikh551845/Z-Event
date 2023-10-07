@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 export default function About() {
   return (
     <div className="mt-3">
-        <div className="hero min-h-fit bg-gradient-to-r from-zinc-400 to-zinc-600 py-12">
+        <div className="hero min-h-fit py-12 bg-gradient-to-r from-zinc-400 to-zinc-600 ">
   <div className="hero-content flex-col lg:flex-row-reverse">
     <img src="https://i.ibb.co/Y7n3Sz1/About.jpg" className="max-w-lg max-h-lg rounded-lg shadow-2xl" />
     <div>

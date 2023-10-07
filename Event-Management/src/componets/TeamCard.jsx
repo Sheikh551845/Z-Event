@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function TeamCard({member}) {
-    console.log(member)
+    
   const {image,name,position, email}=member
   return (
     

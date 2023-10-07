@@ -5,7 +5,7 @@ export default function HomeCard({data}) {
    const {title, short_details,img}=data;
 
   return (
-    <div className="max-w-fit border-black border-solid mx-auto">
+    <div className="max-w-fit mx-auto">
      <div className="relative flex max-w-[24rem] flex-col rounded-xl bg-white bg-clip-border text-black shadow-md">
   <div className="relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none">
     <img
