@@ -2,14 +2,14 @@ import React from 'react'
 
 export default function Banner() {
   return (
-    <div>
-      <div className="hero min-h-screen" style={{backgroundImage: 'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)'}}>
+    <div className="mt-8">
+      <div className="hero min-h-screen" style={{backgroundImage: 'url(https://i.ibb.co/TBgkXqf/Banner.jpg)'}}>
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center text-neutral-content">
-    <div className="max-w-md">
-      <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-      <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-      <button className="btn btn-primary">Get Started</button>
+    <div className="max-w-xl">
+      <h1 className="mb-5 text-5xl font-bold">Best Event Management in Bangladesh</h1>
+      <p className="mb-5">For best services for social events we are there for you</p>
+      <button className="btn glass bg-zinc-200">Learn More</button>
     </div>
   </div>
 </div>

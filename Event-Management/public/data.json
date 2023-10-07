@@ -1,0 +1,53 @@
+ [
+      {
+        "id": 1,
+        "title": "Wedding",
+        "short_details": "Craft your dream wedding with Z Event. Our expert team handles everything from venue selection to decor, ensuring your special day is unforgettable.",
+        "long_details": "At Z Event, we understand that your wedding day is a cherished milestone. Our dedicated team of professionals is committed to making your dream wedding a reality. From the moment you say 'yes' to the final dance, we'll be by your side, meticulously planning and executing every detail. With a curated selection of breathtaking venues, exquisite decor, and top-tier vendors, we'll create an atmosphere of love and celebration that reflects your unique story. Our personalized approach ensures that every aspect of your wedding is tailored to your vision, leaving you free to savor each moment with your loved ones. Trust Z Event to transform your wedding day into an unforgettable experience that you'll treasure forever.",
+        "img": "wedding.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Birthday",
+        "short_details": "Celebrate life's milestones with Z Event. From themed decorations to entertainment, we'll make your birthday bash a memorable experience for all.",
+        "long_details": "Whether it's a sweet sixteen, a milestone birthday, or anything in between, Z Event knows how to throw a party that will be talked about for years. Our team specializes in creating immersive experiences that capture the essence of the guest of honor. From themed decorations to entertainment that keeps the energy high, we ensure every detail aligns with your vision. Let us handle the logistics so you can focus on making memories. Together, we'll craft a birthday celebration that leaves a lasting impression on all who attend.",
+        "img": "birthday.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Anniversary",
+        "short_details": "Honor your love story with a beautifully curated anniversary celebration. Let us handle the planning, so you can focus on each other.",
+        "long_details": "Your love story deserves to be celebrated, and Z Event specializes in creating anniversaries that capture the essence of your journey together. Whether it's your first or your fiftieth, our team will craft an event that honors the milestones you've achieved as a couple. From elegant decor to personalized touches, we'll create an atmosphere of warmth and reflection. Trust us to handle all the planning details, so you can focus on cherishing each other. Together, let's make your anniversary a moment to remember forever.",
+        "img": "anniversary.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Engagement",
+        "short_details": "Begin your journey to forever with a picture-perfect engagement party. Z Event will ensure every detail reflects your unique love story.",
+        "long_details": "Embark on your journey to forever with a celebration that sets the tone for your future together. Z Event specializes in crafting engagement parties that capture the essence of your unique love story. From the venue selection to the smallest decorative detail, we'll ensure everything aligns with your vision. Our team understands the importance of this moment, and we'll work tirelessly to create an atmosphere of joy and anticipation. Trust us to handle all the planning, so you can focus on the excitement of this new chapter. Let's make your engagement party a cherished memory for years to come.",
+        "img": "engagement.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Graduation",
+        "short_details": "Commence the next chapter of life with a memorable graduation event. Our team will create an atmosphere of pride and achievement.",
+        "long_details": "Graduation marks a significant milestone, and Z Event is here to help you celebrate in style. Our team specializes in crafting graduation events that honor your achievements and inspire excitement for the future. From custom decor to thoughtful details, we'll create an atmosphere of pride and accomplishment. Whether it's a high school commencement or a university degree, we'll ensure your graduation is a moment to remember. Trust us to handle the planning, so you can focus on the next exciting chapter of your journey.",
+        "img": "graduation.jpg"
+      },
+      {
+        "id": 6,
+        "title": "Retirement",
+        "short_details": "Bid farewell to a successful career with a fitting retirement celebration. Z Event will organize an event that honors a lifetime of achievements.",
+        "long_details": "Retirement is a time to reflect on a successful career and embrace the new adventures ahead. Z Event specializes in creating retirement celebrations that honor a lifetime of achievements. Our team understands the significance of this transition, and we'll work closely with you to create an event that reflects your accomplishments and aspirations. From venue selection to personalized touches, we'll ensure every detail is perfect. Trust us to handle the planning, so you can focus on the exciting opportunities that await you in this next phase of life.",
+        "img": "retirement.jpg"
+      },
+      {
+        "id": 7,
+        "title": "Prom",
+        "short_details": "Make prom night a magical experience with Z Event. Our attention to detail will ensure an enchanting evening for all attendees.",
+        "long_details": "Prom night is a once-in-a-lifetime event, and Z Event is here to ensure it's nothing short of magical. Our team specializes in creating prom experiences that transport attendees to a world of enchantment and elegance. From venue selection to intricate decor, we pay meticulous attention to every detail. Let us handle the logistics so you can focus on enjoying this special evening with your peers. Trust Z Event to make your prom night a memory that will be cherished forever.",
+        "img": "prom.jpg"
+      }
+    ]
+  
+  

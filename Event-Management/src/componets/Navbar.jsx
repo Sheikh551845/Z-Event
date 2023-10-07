@@ -4,8 +4,7 @@ import { NavLink } from 'react-router-dom'
 export default function Navbar() {
   return (
    
-       <div className=" flex justify-between items-center mt-3 justify-items-center shadow-md p-3  " style={{
-        backgroundImage: 'url(https://i.ibb.co/XLB4Y2M/4mujs-512.jpg  )', backgroundSize: 'cover'}}> 
+       <div className="  bg-gradient-to-r from-stone-200 to-zinc-600 flex justify-between items-center mt-2 justify-items-center shadow-xl p-3  "> 
      <div className="">
    
     <img src="https://i.ibb.co/g9vdv8s/pngegg.png" className="h-20 w-28 rounded-lg" alt="" />
