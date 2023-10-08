@@ -14,11 +14,14 @@ import Login from './Pages/Login.jsx';
 import AboutUs from './Pages/AboutUs.jsx';
 import Layout from './Pages/layout.jsx';
 import AuthProvider from './componets/AuthProvider.jsx';
+import Details from './Pages/Details.jsx';
+import ErrorPage from './Pages/ErrorPage.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout></Layout>,
+    errorElement:<ErrorPage></ErrorPage>,
     children:[
       {
         path: "/",
@@ -41,6 +44,13 @@ const router = createBrowserRouter([
     path: "/Login",
     element:<Login></Login>
 },
+  {
+    path: "/Details/:id",
+    element:<Details></Details>, 
+    loader: ()=>fetch("/data.json")
+        
+  }
+
    ],
   },
 ]);

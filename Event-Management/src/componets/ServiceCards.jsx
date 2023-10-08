@@ -14,7 +14,7 @@ export default function ServiceCards() {
       <h1 className="text-4xl font-bold text-center text-white my-16 border-white border-solid border-2 w-fit mx-auto p-2 rounded-lg">Our Services</h1>
       <div className="mx-auto flex flex-wrap gap-4">
             
-      {data.map((service, index) => (
+      {data?.map((service, index) => (
             <ServiceCard key={index} service={service}></ServiceCard>
             ))}
             

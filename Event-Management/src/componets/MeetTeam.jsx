@@ -40,7 +40,7 @@ export default function MeetTeam() {
   <h1 className="text-4xl font-bold text-center text-white my-16 border-white border-solid border-2 w-fit mx-auto p-2 rounded-lg">Our Team</h1>
   <div className="mx-auto flex flex-wrap gap-4">
         
-  {data.map((member, index) => (
+  {data?.map((member, index) => (
         <TeamCard key={index} member={member}></TeamCard>
         ))}
         

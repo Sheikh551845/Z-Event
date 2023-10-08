@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export default function ServiceCard({service}) {
 
-    const {title, short_details, img}=service;
+    const {title, short_details, img,id}=service;
   return (
     <div className="mx-auto">
       <div className="relative flex max-w-[24rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
@@ -21,14 +22,16 @@ export default function ServiceCard({service}) {
       {short_details}
     </p>
   </div>
-  <div class="p-6 pt-0">
+  <div className="p-6 pt-0">
+  <Link to={`/Details/${id}`}> 
     <button
-      class="select-none rounded-lg bg-pink-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+      className="select-none rounded-lg bg-pink-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
       type="button"
       data-ripple-light="true"
     >
       Show Details
     </button>
+    </Link>
   </div>
 </div>
     </div>
