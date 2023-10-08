@@ -25,7 +25,7 @@ const WhyChooseUs = () => {
     <div className="mx-auto my-24">
       <h1 className="text-4xl font-bold my-14">Why Choose US</h1>
       <div className="topic-cards mx-auto flex flex-wrap gap-4">
-        {topics.map((topic, index) => (
+        {topics?.map((topic, index) => (
           <ChooseUsCard key={index} topic={topic}></ChooseUsCard>
         ))}
       </div>

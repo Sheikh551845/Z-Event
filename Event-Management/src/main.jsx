@@ -17,6 +17,7 @@ import AuthProvider from './componets/AuthProvider.jsx';
 import Details from './Pages/Details.jsx';
 import ErrorPage from './Pages/ErrorPage.jsx';
 import MeetTeam from './componets/MeetTeam.jsx';
+import PrivateRoute from './componets/PrivateRoute.jsx';
 
 const router = createBrowserRouter([
   {
@@ -30,7 +31,7 @@ const router = createBrowserRouter([
     },
       {
           path: "/Services",
-          element:<Services></Services>
+          element:<PrivateRoute><Services></Services></PrivateRoute>
       },
 
       {
@@ -47,13 +48,13 @@ const router = createBrowserRouter([
 },
   {
     path: "/Details/:id",
-    element:<Details></Details>, 
+    element:<PrivateRoute><Details></Details></PrivateRoute>, 
     loader: ()=>fetch("/data.json")
         
   },
   {
     path: "/MeetTeam",
-    element:<MeetTeam></MeetTeam>
+    element:<PrivateRoute><MeetTeam></MeetTeam></PrivateRoute>
 },
 
    ],

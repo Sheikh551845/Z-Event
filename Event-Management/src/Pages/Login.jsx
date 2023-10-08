@@ -1,38 +1,47 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import SocialLogin from '../componets/SocialLogin'
-import { Link } from 'react-router-dom'
+import { Link, Navigate, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify';
+import { AuthContext } from '../componets/AuthProvider';
 
 export default function Login() {
+
+  const{login}=useContext(AuthContext)
+  console.log(login)
+
+  const navigate=useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // get field values 
+   
+
+    
     const email = event.target.email.value;
     const password = event.target.password.value;
 
 
-    // validation 
+     
     if (password.length < 6) {
-        // toast.error('Password must be at least 6 characters');
+         toast.error('Password must be at least 6 characters');
         return;
     }
 
 
-    // // creating a new user
-    // signin(email, password)
-    //     .then(res => {
-    //         // toast.success('User logged in successfully');
-    //         // navigate('/')
-    //     })
-    //     .catch(error => {
-    //         // toast.error(error.message)
-    //     })
+    // login
+    login(email, password)
+        .then(res => {
+            toast.success('User logged in successfully');
+            navigate('/')
+        })
+        .catch(error => {
+            toast.error(error.message)
+        })
 
 
 
 
-}
+          }
 
   return (
     <div className="h-screen mx-auto my-auto">
@@ -43,36 +52,36 @@ export default function Login() {
     </h3>
   </div>
   <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                        <form onClick={handleSubmit} className="card-body">
+                        <form onSubmit={handleSubmit} className="card-body">
+                            
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>
-                                <input type="text" placeholder="email" className="input input-bordered" name='email' />
+                                <input type="text" placeholder="email" className="input input-bordered" name='email' required />
                             </div>
+                           
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="text" placeholder="password" className="input input-bordered" name='password' />
-                                <label className="label">
-                                    <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                                </label>
+                                <input type="text" placeholder="password" className="input input-bordered" name='password' required />
                             </div>
                             <div className="form-control mt-6 p-0">
-                                <button type='submit' className="btn bg-gradient-to-r from-zinc-400 to-zinc-600 text-white">Login</button>
+                                <button className="btn  bg-gradient-to-r from-zinc-400 to-zinc-600 text-white" type='submit'>Log In</button>
                             </div>
-                            <p className="mt-6 flex justify-center font-sans text-sm font-light leading-normal text-inherit antialiased">
+                           
+                        </form>
+                        <p className="mt-6 flex justify-center font-sans text-sm font-light leading-normal text-inherit antialiased">
       Don't have an account?
       <a
         href="/Registration"
         className="ml-1 block font-sans text-sm font-bold leading-normal text-pink-500 antialiased"
       >
-        Registration
-      </a>
+         Registration
+               </a>
     </p>
                             <SocialLogin />
-                        </form>
                     </div>
 </div>
     </div>
