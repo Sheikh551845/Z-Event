@@ -16,6 +16,7 @@ import Layout from './Pages/layout.jsx';
 import AuthProvider from './componets/AuthProvider.jsx';
 import Details from './Pages/Details.jsx';
 import ErrorPage from './Pages/ErrorPage.jsx';
+import MeetTeam from './componets/MeetTeam.jsx';
 
 const router = createBrowserRouter([
   {
@@ -49,7 +50,11 @@ const router = createBrowserRouter([
     element:<Details></Details>, 
     loader: ()=>fetch("/data.json")
         
-  }
+  },
+  {
+    path: "/MeetTeam",
+    element:<MeetTeam></MeetTeam>
+},
 
    ],
   },

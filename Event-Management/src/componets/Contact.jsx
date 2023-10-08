@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Contact() {
   return (
-    <div className="mb-2 ">
+    <div className="mb-2 mt-3 ">
        
     <div className="container mx-auto ">
                  <div className="lg:flex max-w-screen-xl ">

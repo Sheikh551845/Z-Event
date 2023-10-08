@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 export default function HomeCards() {
     const {data}= useContext(AuthContext)
  
-  const Sliced = data.slice(0,3) ;
+  const Sliced = data.slice(0,6) ;
   
   return (
     <div className=" mt-3 mx-auto ">
