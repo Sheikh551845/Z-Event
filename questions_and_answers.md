@@ -18,10 +18,10 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: ReferenceError: greetign is not defined..
 
-<i>Write your explanation here</i>
-
+<i>This means that the variable greetign is not defined. When you attempt to assign an empty object ({}) to an undefined variable, a ReferenceError will be thrown. Therefore, the correct answer is option B</i>
+   
 </p>
 </details>
 
@@ -43,9 +43,13 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: NaN
 
-<i>Write your explanation here</i>
+
+
+<i>In the provided function sum(a, b), the parameters a and b are not specified to be of a specific data type. When the function is called with sum(1, "2"), JavaScript tries to perform addition with a number (1) and a string ("2"). In this case, JavaScript will attempt to concatenate the string with the number, resulting in the string "12". However, since this is an addition operation, JavaScript will then try to convert "12" back to a number, but it can't do this conversion. As a result, it returns NaN (Not a Number).</i>
+
+
 
 </p>
 </details>
@@ -69,9 +73,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: ['🍕', '🍫', '🥑', '🍔']
 
-<i>Write your explanation here</i>
+<i>In the code, info.favoriteFood = "🍝"; is reassigning the value of info.favoriteFood to "🍝". This does not affect the original food array. Therefore, food remains ['🍕', '🍫', '🥑', '🍔'] and the correct answer is option A.</i>
 
 </p>
 </details>
@@ -94,9 +98,13 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B: Hi there, undefined
 
-<i>Write your explanation here</i>
+<i>Explanation:
+
+The function sayHi(name) expects an argument name to be passed when it's called. However, in the console.log(sayHi()); statement, the function is called without passing any arguments.
+
+In JavaScript, if a parameter is not provided, it defaults to undefined. Therefore, the function returns "Hi there, undefined", as name inside the template string is undefined. This makes option B the correct answer.</i>
 
 </p>
 </details>
@@ -122,9 +130,30 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: 3
 
-<i>Write your explanation here</i>
+<i>
+
+
+
+
+In the provided code, count is initially set to 0, and there's an array nums containing [0, 1, 2, 3]. The forEach method iterates over each element in the nums array.
+
+In JavaScript, 0 is considered a falsy value, while all other non-zero numbers are considered truthy. Therefore, when num is 0, the condition in the if statement evaluates to false and count remains unchanged.
+
+When num is 1, the condition evaluates to true, and count is incremented by 1.
+
+When num is 2, the condition evaluates to true again, and count is further incremented by 1.
+
+When num is 3, the condition evaluates to true again, and count is further incremented by 1.
+
+After the loop finishes, count is 3, so the correct answer is option B: 2.
+
+
+
+
+
+</i>
 
 </p>
 </details>
