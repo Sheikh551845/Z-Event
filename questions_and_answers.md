@@ -15,13 +15,13 @@ console.log(greetign);
 - B: `ReferenceError: greetign is not defined`
 - C: `undefined`
 
-<details><summary><b>ReferenceError: greetign is not defined..</b></summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: 
+#### Answer: ReferenceError: greetign is not defined..
 
-<i></i>
-   This means that the variable greetign is not defined. When you attempt to assign an empty object ({}) to an undefined variable, a ReferenceError will be thrown. Therefore, the correct answer is option B
+<i>This means that the variable greetign is not defined. When you attempt to assign an empty object ({}) to an undefined variable, a ReferenceError will be thrown. Therefore, the correct answer is option B</i>
+   
 </p>
 </details>
 
