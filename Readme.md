@@ -1,6 +1,6 @@
 # Event-Management
 
-## [ Private Repo Link](https://classroom.github.com/a/ehOGNGkI)
+## [Live-link](https://event-management-7c344.web.app/)
 
 # Z Event - Event Management Website
 
