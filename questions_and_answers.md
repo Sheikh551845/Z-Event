@@ -147,7 +147,7 @@ When num is 2, the condition evaluates to true again, and count is further incre
 
 When num is 3, the condition evaluates to true again, and count is further incremented by 1.
 
-After the loop finishes, count is 3, so the correct answer is option B: 2.
+After the loop finishes, count is 3.
 
 
 
