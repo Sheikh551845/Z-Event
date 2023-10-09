@@ -44,8 +44,8 @@ export default function Login() {
           }
 
   return (
-    <div className="h-screen mx-auto my-auto">
-      <div className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mx-auto mt-32">
+    <div className="md:h-screen mx-auto my-auto">
+      <div className="relative flex  w-72  md:w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mx-auto mt-32">
   <div className="relative mx-4 -mt-6 mb-4 grid h-28 place-items-center overflow-hidden rounded-xl bg-gradient-to-r from-zinc-400 to-zinc-600  bg-clip-border text-white shadow-lg shadow-zinc-600">
     <h3 className="block font-sans text-3xl font-semibold leading-snug tracking-normal text-white antialiased">
       Sign In

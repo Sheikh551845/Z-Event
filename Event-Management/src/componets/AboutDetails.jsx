@@ -5,7 +5,7 @@ export default function AboutDetails() {
     <div className="mt-3">
       <div className="hero min-h-fit py-12 bg-gradient-to-r from-zinc-400 to-zinc-600 ">
   <div className="hero-content flex-col lg:flex-row">
-    <img src="https://i.ibb.co/mXj3NcD/CEO.jpg" className="max-w-sm rounded-lg shadow-2xl" />
+    <img src="https://i.ibb.co/mXj3NcD/CEO.jpg" className="max-w-[240px] md:max-w-sm  rounded-lg shadow-2xl" />
     <div>
       <h1 className="text-white text-3xl">
           Managing Events For More Than 5 Years </h1>
@@ -22,13 +22,14 @@ CEO, Z Event</p>
 
 <div className="hero min-h-fit py-16 bg-gradient-to-r from-zinc-600 to-zinc-400 mt-3 ">
   <div className="hero-content flex-col lg:flex-row-reverse lg:gap-52">
-    <img src="https://i.ibb.co/XF91Vnw/pexels-craig-adderley-2306277.jpg" className="max-w-sm rounded-lg shadow-2xl" />
-    <div className="text-white ">
-     <div className="stat place-items-center w-96  ">
-    <div className="stat-title text-white text-xl  font-bold">Successful Events </div>
-    <div className="stat-value text-5xl  font-bold">560+</div>
-    <div className="stat-desc text-white text-xl  font-bold">From 2019 to till now</div>
+    <img src="https://i.ibb.co/XF91Vnw/pexels-craig-adderley-2306277.jpg" className="max-w-[240px] md:max-w-sm rounded-lg shadow-2xl" />
+    <div className="text-white  mx-w-fit mx-auto ">
+    <div className="stat place-items-center w-40 lg:w-96  mx-w-fit mx-auto" >
+    <div className="stat-title text-lg lg:text-3xl text-white">Successful Events </div>
+    <div className="stat-value text-xl lg:text-5xl text-white">560+</div>
+    <div className="stat-desc text-lg lg:text-3xl text-white">From 2019 to till now</div>
   </div>
+  
     </div>
   </div>
 </div>

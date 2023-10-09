@@ -16,7 +16,7 @@ export default function Navbar() {
        <div className="  bg-gradient-to-r from-stone-200 to-zinc-600 flex justify-between items-center mt-2 justify-items-center shadow-xl p-3  "> 
      <div className="">
    
-    <img src="https://i.ibb.co/g9vdv8s/pngegg.png" className="h-20 w-28 rounded-lg" alt="" />
+    <img src="https://i.ibb.co/g9vdv8s/pngegg.png" className=" h-16 w-12 md:h-20 md:w-28 rounded-lg" alt="" />
    </div>
    <div>
    <div className="hidden lg:block">
@@ -116,10 +116,10 @@ export default function Navbar() {
    </div>
    {
     user && Object.keys(user).length > 0? <div className="flex justify-center items-center gap-2 ">
-    <p className="text-white fond-bold">{user.displayName}</p>
+    <p className="text-white fond-bold text-xs lg:text-xl">{user.displayName}</p>
     
     <div className="avatar">
-      <div className="w-12 rounded-full ring ring-offset-base-100 ring-offset-2">
+      <div className="w-6 md:w-12 rounded-full ring ring-offset-base-100 ring-offset-2">
 
         {
           user?.photoURL !==null ? <img src={user.photoURL} /> : <img src="https://i.ibb.co/3MJwzX0/pngegg-1.png"/>
@@ -130,7 +130,7 @@ export default function Navbar() {
       </div>
       </div>
     
-      <button className="btn text-black p-2 bg-white rounded-lg"
+      <button className="md:btn text-black p-1 md:w-22 md:h-6    md:p-3 bg-white rounded-lg text-xs lg:text-base"
           onClick={logout}
       >Logout</button>
     
@@ -138,7 +138,7 @@ export default function Navbar() {
 
     <div>
       <NavLink to="/Login">
-      <button className="btn text-black p-2 bg-white rounded-lg">Log In</button>
+      <button className="md:btn text-black p-1 md:w-22 md:h-6    md:p-3 bg-white rounded-lg text-xs lg:text-base">Log In</button>
    </NavLink>
     </div>
 

@@ -8,7 +8,7 @@ export default function About() {
   <div className="hero-content flex-col lg:flex-row-reverse" data-aos="fade-left"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">
-    <img src="https://i.ibb.co/Y7n3Sz1/About.jpg" className="max-w-lg max-h-lg rounded-lg shadow-2xl" />
+    <img src="https://i.ibb.co/Y7n3Sz1/About.jpg" className=" w-60 max-h-xs md:max-w-lg md:max-h-lg rounded-lg shadow-2xl" />
     <div data-aos="fade-up"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">

@@ -59,14 +59,14 @@ export default function Registration() {
 
     }
   return (
-    <div className="h-80vh mx-auto my-10">
-      <div className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mx-auto mt-32">
-  <div className="relative mx-4 -mt-6 mb-4 grid h-28 place-items-center overflow-hidden rounded-xl bg-gradient-to-r from-zinc-400 to-zinc-600  bg-clip-border text-white shadow-lg shadow-zinc-600">
-    <h3 className="block font-sans text-3xl font-semibold leading-snug tracking-normal text-white antialiased">
+    <div className=" mx-auto my-10 ">
+      <div className="relative flex w-72  md:w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mx-auto mt-32">
+  <div className="relative mx-2  md:mx-4 -mt-6 mb-4 grid h-20 md:h-28 place-items-center overflow-hidden rounded-xl bg-gradient-to-r from-zinc-400 to-zinc-600  bg-clip-border text-white shadow-lg shadow-zinc-600">
+    <h3 className="block font-sans text-xl md:text-3xl font-semibold leading-snug tracking-normal text-white antialiased">
       Registration
     </h3>
   </div>
-  <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+  <div className="card flex-shrink-0  md:w-full max-w-xs md:max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleSubmit} className="card-body">
                             <div className="form-control">
                                 <label className="label">
