@@ -13,11 +13,11 @@ export default function SocialLogin() {
             .then(res => {
                 toast.success('User logged in successfully');
                 navigate('/')
-                console.log(res);
+               
             })
             .catch(error => {
                 toast.error(error.message)
-                console.log(error)
+              
             })
     }
   return (

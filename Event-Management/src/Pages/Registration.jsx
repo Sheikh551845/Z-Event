@@ -2,37 +2,39 @@ import React, { useContext } from 'react'
 import SocialLogin from '../componets/SocialLogin';
 import { AuthContext } from '../componets/AuthProvider';
 import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
+
+
+
 
 
 export default function Registration() {
 
+  const navigate =useNavigate()
 
-  const {crateEmailUser}= useContext(AuthContext);
+  const {crateEmailUser,update,user}= useContext(AuthContext);
     
-  console.log(crateEmailUser);
+    
 
 
 
    const handleSubmit = (event) => {
     event.preventDefault();
 
-    console.log("in function")
-
-   
        
-
-       
+    
+      
         const name = event.target.name.value;
         const email = event.target.email.value;
         
         const password = event.target.password.value;
 
-        console.log(password.length)
+       
          
       
         
-        if (password.length < 6) {
-          toast.error("password must be 6 character");
+        if (!/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/.test(password)) {
+          toast.error("password credential not match");
             return;
         }
 
@@ -40,8 +42,13 @@ export default function Registration() {
         
         crateEmailUser(email, password)
             .then(res => {
-              toast.success('User created successfully');
-              // navigate('/')
+              
+              update(name)
+                 .then(()=>{
+                  toast.success('User created successfully');
+                  navigate('/')
+                 })
+              
             })
             .catch(error => {
                 toast.error(error.message)

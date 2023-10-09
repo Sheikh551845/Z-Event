@@ -7,7 +7,7 @@ import { AuthContext } from '../componets/AuthProvider';
 export default function Login() {
 
   const{login}=useContext(AuthContext)
-  console.log(login)
+ 
 
   const navigate=useNavigate();
 

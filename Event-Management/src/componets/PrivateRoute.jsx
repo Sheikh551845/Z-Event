@@ -10,7 +10,7 @@ const PrivateRoute = ({ children }) => {
 
     
     if (loading) 
-    return <h1 className="text-5xl h-80vh w-fit mx-auto mt-15 font-bold">Loading.....</h1>
+    return <h1 className="text-5xl max-h-screen w-fit mx-auto mt-15 font-bold">Loading.....</h1>
     
 
     if (!user?.email) {

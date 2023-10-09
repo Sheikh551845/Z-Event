@@ -9,7 +9,7 @@ export default function Navbar() {
 
   
   
-console.log(user)
+
 
   return (
    
@@ -116,13 +116,13 @@ console.log(user)
    </div>
    {
     user && Object.keys(user).length > 0? <div className="flex justify-center items-center gap-2 ">
-    <p className="text-white fond-bold">{ user.email}</p>
+    <p className="text-white fond-bold">{user.displayName}</p>
     
     <div className="avatar">
       <div className="w-12 rounded-full ring ring-offset-base-100 ring-offset-2">
 
         {
-          user?.photoURL? <img src={user.photoURL} /> :<img src="https://ibb.co/qWZz5GR"/>
+          user?.photoURL !==null ? <img src={user.photoURL} /> : <img src="https://i.ibb.co/3MJwzX0/pngegg-1.png"/>
         }
          
         
