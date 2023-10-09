@@ -43,11 +43,11 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: A: NaN
+#### Answer:  C: `"12"`
 
 
 
-<i>In the provided function sum(a, b), the parameters a and b are not specified to be of a specific data type. When the function is called with sum(1, "2"), JavaScript tries to perform addition with a number (1) and a string ("2"). In this case, JavaScript will attempt to concatenate the string with the number, resulting in the string "12". However, since this is an addition operation, JavaScript will then try to convert "12" back to a number, but it can't do this conversion. As a result, it returns NaN (Not a Number).</i>
+<i>In the provided function sum(a, b), the parameters a and b are not specified to be of a specific data type. When the function is called with sum(1, "2"), JavaScript tries to perform addition with a number (1) and a string ("2"). In this case, JavaScript will attempt to concatenate the string with the number, resulting in the string "12".</i>
 
 
 
